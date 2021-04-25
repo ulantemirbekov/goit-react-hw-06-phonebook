@@ -1,12 +1,25 @@
-.contact {
-  display: flex;
+.enter {
+    opacity: 0;
+    transform: translateX(-100%);
+    transform: scale(0.1);
+}
+.enterActive {
+    opacity: 1;
+    transform: translateX(0);
+    transform: scale(1);
 
-  margin-bottom: 5px;
+    transition: all 250ms linear;
 }
 
-.text {
-  margin: 0 10px 0 0;
+.exit {
+    opacity: 1;
+    transform: translateX(0);
+    transform: scale(1);
 }
 
-.btn {
+.exitActive {
+    opacity: 0;
+    transform: translateX(-100%);
+    transform: scale(0.1);
+    transition: all 250ms linear;
 }
